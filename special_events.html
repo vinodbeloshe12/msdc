@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Special Events</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="js/animsition.min.js"></script>
+    <script src="http://www.jqueryscript.net/demo/jQuery-Plugin-For-Water-Ripple-Animation-ripples/js/jquery.ripples.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            try {
+                $('.a').ripples({
+                    resolution: 256,
+                    perturbance: 0.04
+                });
+            } catch (e) {
+                $('.error').show().text(e);
+            }
+            $(".animsition-overlay").animsition({
+                inClass: 'overlay-slide-in-top',
+                outClass: 'overlay-slide-out-top',
+                inDuration: 1500,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+                loading: true,
+                loadingParentElement: 'body', //animsition wrapper element
+                loadingClass: 'animsition-loading',
+                loadingInner: '', // e.g '<img src="loading.svg" />'
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+                // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+                overlay: true,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function (url) {
+                    window.location.href = url;
+                }
+            });
+        });
+    </script>
+</head>
+
+<body class="pageBg">
+    <div class="animsition-overlay" data-animsition-overlay="true" data-animsition-in-class="overlay-slide-in-top" data-animsition-in-duration="1000"
+        data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="800">
+        <div class="a" style="background-image:url(img/deep1.jpg)">
+        </div>
+        <div class="container page">
+
+            <div class="col-lg-12">
+                <h1 class="title">Special Events</h1>
+
+                <div class="content">
+
+                    <p>
+                        Mumbai scuba diving club organised a special event programme with underwater celebration by using a scuba diving gear . We
+                        can make your day special with something what u can be amaze of doing it for your special one. </p>
+
+
+                    <div class="activityCont col-lg-12">
+                        <div class="row">
+                            <!-- <div class=""> -->
+                            <div class="col-lg-6 p-5">
+
+                                <ul>
+                                    <li>Anniversary special celebration</li>
+                                    <li>Birthday celebration</li>
+                                    <li>Friends Reunion</li>
+                                    <li>Underwater proposal</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 p-0">
+                                <img class="img-fluid" src="http://graphicfort.com/templates/plume/images/index/dive/008.jpg" alt="">
+                            </div>
+                            <!-- </div> -->
+
+
+                        </div>
+                        <p class="p-5">
+                            If you are interested to make your loved ones day special. We can arrange a special underwater event programme for you. Some
+                            prior booking and information is needed before organizing the programme.
+                        </p>
+                        <p>
+                            Like Name, photos, Date, time, Any special messages.
+                        </p>
+                        <strong>
+                            <em>
+                                Price - Rs 5000/-Pp. (Include Trainning session + Celebration on a private boat in the ocean by doing a Scuba dive)
+                            </em>
+                        </strong>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

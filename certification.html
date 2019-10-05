@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Certification</title>
+    <!-- animsition.css -->
+
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="js/animsition.min.js"></script>
+    <script src="http://www.jqueryscript.net/demo/jQuery-Plugin-For-Water-Ripple-Animation-ripples/js/jquery.ripples.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            try {
+                $('.a').ripples({
+                    resolution: 256,
+                    perturbance: 0.04
+                });
+            } catch (e) {
+                $('.error').show().text(e);
+            }
+            // this.dropAtMouse($('.a'), 0.03, 0.01);
+            $(".animsition-overlay").animsition({
+                inClass: 'overlay-slide-in-top',
+                outClass: 'overlay-slide-out-top',
+                inDuration: 1500,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+                loading: true,
+                loadingParentElement: 'body', //animsition wrapper element
+                loadingClass: 'animsition-loading',
+                loadingInner: '', // e.g '<img src="loading.svg" />'
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+                // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+                overlay: true,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function (url) {
+                    window.location.href = url;
+                }
+            });
+        });
+    </script>
+</head>
+
+<body class="pageBg">
+
+    <div class="animsition-overlay" data-animsition-overlay="true" data-animsition-in-class="overlay-slide-in-top" data-animsition-in-duration="1000"
+        data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="800">
+        <div class="a" style="background-image:url(img/deep1.jpg)">
+        </div>
+        <div class="container page">
+
+            <div class="col-lg-12">
+                <h1 class="title">Scuba Diving Club Certification</h1>
+
+                <div class="content">
+
+                    <p>
+                        Mumbai scuba diving club having only one philosophy. Try it - Experience it - Join Community.
+                    </p>
+
+                    <p>
+                        The main purpose of the programme is to promote scuba diving as the biggest community of scuba divers in mumbai. As a sports
+                        activity and importance of training and certification
+                    </p>
+
+                    <p>
+                        Club certification programmes are for those who are willing to do scuba diving training and explore the local scuba diving
+                        places in maharashtra. Programme offers 6 Amazing things before u go to scuba dive in the ocean.
+                    </p>
+                    <div class="activityCont col-lg-12">
+                        <div class="row">
+                            <!-- <div class=""> -->
+                            <div class="col-lg-6 p-5">
+
+                                <ul>
+                                    <li>Working of scuba equipment</li>
+                                    <li>How to handle scuba gear underwater</li>
+                                    <li>Communicating underwater.</li>
+                                    <li>How to get rid of water phobia.</li>
+                                    <li>How to swim underwater</li>
+                                    <li>Club Scuba diving Certification( Lifetime membership )</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 p-0">
+                                <img class="img-fluid" src="http://graphicfort.com/templates/plume/images/index/dive/005.jpg" alt="">
+                            </div>
+                            <!-- </div> -->
+
+
+                        </div>
+                        <div>
+
+                            <div class="row">
+                                <div class="col-lg-6 p-0">
+                                    <img class="img-fluid" src="http://graphicfort.com/templates/plume/images/index/dive/006.jpg" alt="">
+                                </div>
+                                <!-- <div class="col-lg-12"> -->
+                                <div class="col-lg-6 p-5">
+                                    <ul>
+                                        <li>Short Dive package cost Rs 3500/-Pp + 18%GST</li>
+                                        <li>Long Dive package cost Rs- 5000/-Pp+ 18%GST</li>
+                                        <li>Programme include Trainning Dive + Ocean Dive</li>
+                                        <li>No of Days- 2Days programme</li>
+                                        <li>Final Underwater ocean dive time 15-20 mins for Short Dive package</li>
+                                        <li>Final Underwater ocean dive time 45 mins for long Dive package.</li>
+                                    </ul>
+                                    <div class="col text-center">
+                                        <a href="contact.html">
+                                            <button class="btn btn-primary">Google Pay</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
